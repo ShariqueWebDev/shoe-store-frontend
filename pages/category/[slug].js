@@ -67,7 +67,7 @@ export default Category;
 // NEXT JS STATIC SITE GENERATION METHODS (SSG FUNCTIONS) TO GET SLUG PATHS
 export async function getStaticPaths() {
   const category = await fetchDataFromApi(`/api/categories?populate=*`);
-  const paths = category.data.map((catg) => {
+  const paths = category?.data?.map((catg) => {
     return {
       params: {
         slug: catg.attributes.slug,
