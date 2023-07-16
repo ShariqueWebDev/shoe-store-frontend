@@ -1,0 +1,22 @@
+.msg{
+    transform: scale(0);
+    animation: increaseScale 3s ease forwards;
+}
+
+@keyframes increaseScale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+/* @keyframes showAlerts {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+} */
