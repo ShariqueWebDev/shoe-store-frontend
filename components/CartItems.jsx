@@ -32,7 +32,7 @@ const CartItems = ({ product, slug }) => {
         </div>
         <div className="text w-full max-md:flex-col relative">
           <div className="absolute right-0 top-1 hidden max-md:block">
-            <VscChromeClose size={18} />
+            <VscChromeClose  onClick={()=>{dispatch(removeItemFromCart({id:product.id}))}} size={18} />
           </div>
           <div className="flex justify-between max-md:flex-col">
 
